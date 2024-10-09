@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="headcontainer">
+    <h1>Password Genererator</h1>
+    <div class="password-container">
+      <input type="text" id="password" placeholder="Password">
+      <img id="copy-btn" src="./images/copy-icon.svg">
+    </div>
+    <div class="box-container">
+    <div class="character">
+      <h3>Character Length</h3>
+      <span class="slider-number" data-lenght>0</span>
+      <input id="slider" type="range" min="4" max="40" value="4" oninput="displaySliderValue(this);" class="progress"/>
+   </div>
+    <div class="checkbox-container">
+    <label class="container">Inculde Uppercase Letters
+        <input type="checkbox" id="uppercase" checked="checked">
+        <span class="checkmark"></span>
+      </label>    
+      <label class="container">Include Lowercase Letters
+        <input type="checkbox" id="lowercase" checked="checked">
+        <span class="checkmark"></span>
+      </label>   
+      <label class="container">Include Numbers
+        <input type="checkbox" id="number" checked="checked">
+        <span class="checkmark"></span>
+      </label>    
+      <label class="container">Include Symbols
+        <input type="checkbox" id="symbol" checked="checked">
+        <span class="checkmark"></span>
+      </label>
+      </div>
+      <div class="strengt-container">
+        <h3>Strength</h3>
+        <span class="great-container">Great</span>
+        <span class="weak"></span>
+        <span class="god"></span>
+        <span class="great"></span>
+        <span class="strong"></span>
+      </div>
+        <div class="button">
+          <button class="generate" id="generate">Generate</button>
+        </div>
+        </div>
+        <div class="techover-logo">
+          <img src="./images/techover-logo.png" alt="">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
